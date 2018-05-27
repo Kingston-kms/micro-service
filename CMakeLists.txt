@@ -65,7 +65,7 @@ else()
     set(OPENSSL_LIBS "${OPENSSL_LIBRARIES}")
     set(CPPRESTSDK_LIBRARY "${PROJECT_SOURCE_DIR}/libs/cpprestsdk/build.release/Binaries/libcpprest.a")
 
-    set(LIBRARIES_SEARCH_PATHS ${CPPRESTSDK_LIBRARY} ${OPENSSL_LIBS} ${Boost_LIBRARIES})
+    set(LIBRARIES_SEARCH_PATHS ${CPPRESTSDK_LIBRARY} ${OPENSSL_LIBS} ${Boost_LIBRARIES} -lpthread )
 endif()
 
 message(BOOST_LIBS " ${Boost_LIBRARIES}")
